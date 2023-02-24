@@ -1,0 +1,171 @@
+@import "colors";
+
+// img {
+//   display: block;
+// }
+
+
+
+
+
+@media only screen and (max-width:768px){
+
+nav {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  background-color: $first;
+  > main {
+    margin-top: 8%;
+    // padding-top: 45px;
+    padding-left: 30%;
+    // padding-left: 2%;
+    display: flex;
+    // padding-right: 30px;
+    background-color: $first;
+    
+    > .about {
+      font:700 15px "Anek latin";
+      color: black;
+      // padding: 5px;
+      margin-top: 5px;
+      // padding-right: 10px;
+      margin-right: 10px;
+      margin-left: -20px;
+
+    }
+    > .work {
+      width: 100px;
+      height: 30px;
+      // margin-right: 10px;
+      border-radius: 10px;
+      background-color: #ce0202;
+      font: 700 15px  "Anek latin";
+      padding-left: 1rem;
+      padding-top: 5px;
+      color: white;
+    }
+  }
+}
+
+.logo {
+  padding-top: 5%;
+  padding-left: 10px;
+  // margin: 20px;
+  // margin-left: 20px;
+  display: flex;
+  // height: 20px;
+  > .that {
+    width: 80px;
+    margin-left: 8px;
+    height: 45px;   
+    margin-bottom: 60px;
+  }
+  > .studios {
+    width: 80px;
+    height: 20px;
+    margin-top: 20px;
+    padding-left: 7px;
+  }
+
+}
+}
+
+
+@media only screen and (min-width:768px) {
+    
+  
+nav {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: $first;
+  top: 0%;
+  z-index: 10;
+  // opacity: 0.1;
+
+
+
+  > main {
+    margin-top: 20px;
+    margin-bottom: -25px;
+    padding-right: 70px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+
+    >.work {
+      // border:  solid;
+      margin-top: 1px;
+      padding: 5px 30px;
+      background-color: #ce0202;
+      border-radius: 10px;
+      color: white;
+      // font-family: 'Anek latin';
+      font-size: 30px;
+      font-weight: 800;
+      // margin-bottom: 50px;
+      // font:  2rem white $text1;
+    }
+
+    >.about {
+      // font-family: $text1;
+      font-size: 30px;
+      font-weight: 800;
+      margin-top: 11px;
+    }
+
+    > a {
+      // margin-top: 100px;
+      font-family: $text1;
+      // font-size: 20px;
+      color: $dark;
+      margin: 1rem;
+      margin-top: 10px;
+      // margin-bottom: 20px;
+
+      // &:hover {
+      //   color: $third;
+      // }
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  // float: left;
+  // width: 200px;
+  height: 10px;
+  padding-top: 14px;
+  margin-bottom: 60px;
+  // margin: 5px;
+
+  > .that {
+    margin-left: 50px;
+    margin-bottom: 100px;
+  //   width: 200px;
+    height: 60px;
+  
+  }
+  > .studios {
+    padding-left: 25px;
+    margin-top: 35px;
+    // margin-left: -100px;
+    // margin: 50px;
+
+    height: 20px;
+  //   float: right;
+  //   width: 200px;
+  //   height: 200px;
+  }
+}
+
+hr {
+  height: 3px;
+  background-color: black;
+}
+
+}

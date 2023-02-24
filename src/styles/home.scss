@@ -1,0 +1,399 @@
+@import "colors";
+
+@media only screen and (max-width:768px) {
+
+.home {
+  width: 100%;
+  height: 110vh;
+  background-color: $second;
+
+  > .home-child {
+    width: 50%;
+    height: 32vh;
+    // margin-top: 100px;
+    
+    > h1 {
+      padding-top: 12%;
+      padding-left: 15%;
+      // height: -10%;
+      font: 600 3rem "Anek latin";
+      }
+    > .h1tag {
+      margin-top: -38px;
+      font: 900 4rem "Anek latin";
+    }
+    h2 {
+      padding-left: 15%;
+      padding-top: 2rem;
+      width: 190%;
+      box-sizing: border-box;
+      font: 500 1.9rem $text1;
+    }
+    h3 {
+      padding-left: 15%;
+      padding-top: 4rem;
+      margin-bottom: -8%;
+      width: 180%;
+      font: 300 1.5rem $text1;
+      
+    }
+    p{
+      width: 200%;
+      color: #ce0202;
+      font: 600 20px "Anek latin";
+    }
+    }
+  }
+
+.formp {
+  
+  padding-top: 12rem;
+  padding-left: 8%;
+  padding-bottom: 30px;
+
+  // padding-top: 10%;
+}
+input {
+  width: 200%;
+  padding: 15px 20px;
+  margin: 12px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+// input[type="submit"] {
+//   width: 40%;
+//   background-color: white;
+//   color: black;
+//   padding: 10px 5px;
+//   margin: 2px;
+//   margin-top: 12px;
+//   // margin-bottom: -200px;
+//   border: 2px solid black;
+//   border-radius: 8px;
+//   cursor: pointer;
+// }
+
+button {
+  width: 35%;
+  background-color: white;
+  color: black;
+  padding: 10px 5px;
+  margin: 2px;
+  margin-top: 12px;
+  // margin-bottom: -200px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  width: 200%;
+  padding: 25px 20px;
+  margin: 12px 0;
+  border: 1px solid black;
+  border-radius: 8px;
+  // box-sizing: border-box;
+}
+
+.message{
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+.message .success{
+  font-size: 20px;
+  color: green;
+  position: absolute;
+  animation: buttons .3s linear;
+  display: none;
+}
+.message .danger{
+  font-size: 20px;
+  color: red;
+  position: absolute;
+  transition: .3s;
+  animation: buttons .3s linear;
+  display: none;
+}
+@keyframes buttons{
+  0%{
+      transform: scale(0.1);
+  }
+  50%{
+      transform: scale(0.5);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
+
+
+
+.marquee {
+  width: 100%;
+  // padding: 5px;
+  background: #76a5afff;
+  color: white;
+  // text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee div {
+  font: 400 24px 'Anek latin';
+  // word-spacing: 30px;
+  // letter-spacing: 2px;
+  font-family: Anek latin;
+  // z-index: 332;
+  // display: inline-block;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  animation: animate 15s ;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  > span {
+    padding: 0 15px;
+  }
+  > span a:link {
+    // font: 700 1.9 'Anek latin' yellow;
+    color: black;
+    font-weight: 700;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: matrix(1,0,0,1,0,0);
+    opacity: 1;
+    animation-timing-function: linear;
+}
+100% {
+  transform: matrix(1,0,0,1,-1800,0);
+  opacity: 1;
+}
+}
+
+// @keyframes animate {
+//   0%{
+//     transform: translateX(0%);
+//   }
+//   100% {
+//     transform: translateX(-100%);
+//   }
+// }
+
+
+}
+
+
+
+@media only screen and (min-width:768px) {
+
+  .home {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 76vh;
+    padding-top: 5%;
+    padding-left: 90px;
+    // padding-bottom: 0px;
+    background-color: $second;
+  
+    > main {
+  
+      padding-top: 3rem;
+      padding-left: 8rem;
+  
+    }
+  
+    h1 {
+      // padding-top: px;
+      font:700 5rem $text1;
+      color: black;
+    }
+
+    h2 {
+      padding-left: 2px;
+      font: 500 1.9rem $text1;
+      padding-bottom: 25px;
+    }
+
+    h3 {
+      padding-top: 25px;
+      padding-left: 2px;
+      font: 300 1.5rem $text1;
+    }
+
+    p {
+      // text-align: left;
+      font: 500 1.5rem $text1;
+      color: #ce0202;
+      justify-content: left;
+    }
+    .h1tag {
+      font: 700 8rem $text1 ;
+    }
+  }
+  
+  .home-child {
+    position: relative ;
+    justify-content: center;
+    // margin: 0%;
+    float: left;
+    width: 100%;
+    padding: 30px;
+    padding-top: 45px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    // border: solid black;
+  }
+  
+  .formp {
+      padding-left: 12%;
+      padding-right: 9%;
+   
+  }
+  
+  input {
+    width: 90%;
+    padding: 15px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    resize: none;
+    width: 90%;
+    padding: 25px 20px;
+    margin: 12px 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    // box-sizing: border-box;
+  }
+  
+  // input[type="submit"] {
+  //   width: 15%;
+  //   background-color: white;
+  //   color: black;
+  //   padding: 10px 5px;
+  //   margin: 2px;
+  //   margin-top: 12px;
+  //   // margin-bottom: -200px;
+  //   border: 2px solid black;
+  //   border-radius: 8px;
+  //   cursor: pointer;
+  // }
+  button {
+    width: 15%;
+    background-color: white;
+    color: black;
+    padding: 10px 5px;
+    margin: 2px;
+    margin-top: 12px;
+    // margin-bottom: -200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.message .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+  
+  
+  .marquee {
+    // height: 500px;
+    // position: absolute;
+    width: 100%;
+    padding: 8px;
+    background: #76a5afff;
+    color: white;
+    // text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .marquee div {
+    font: 300 30px 'Anek latin';
+    word-spacing: 5px;
+    font-family: Anek latin;
+    // z-index: 332;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    animation: animate  ;
+    animation-duration: 7s;
+    animation-delay: 0s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    > span {
+      padding: 0 15px;
+    }
+    > span a:link {
+      // font: 700 1.9 'Anek latin' yellow;
+      color: black;
+      font-weight: 600;
+      // padding: 0 15px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: matrix(1,0,0,1,0,0);
+      opacity: 1;
+      animation-timing-function: linear;
+  }
+  100% {
+    transform: matrix(1,0,0,1,-920,0);
+    opacity: 1;
+}
+    // 0%{
+    //   transform: translateX(100%);
+    // }
+    // 100% {
+    //   transform: translateX(-100%);
+    // }
+  } 
+  
+}
+

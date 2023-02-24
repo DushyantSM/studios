@@ -1,0 +1,66 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// ul {
+//     background-color: #46aaaa;
+//     color: white;
+//     padding: 0;
+//     text-align: left;
+//     margin: 0;
+//     // padding: px;
+//   }
+//   a {
+//     color: white;
+//     // text-decoration-line: none;
+//     font-weight: 800;
+//     font-size: medium;
+//     }
+
+//   li {
+//     display: inline-flex;
+//     text-align: center;
+//     margin-right: 0px;
+//     padding: 20px 90px 15px 0px;
+//   }
+
+//   .moving-text {
+//       /* padding-left: px; */
+//       /* padding-bottom: 30px; */
+//       position: relative;
+
+//   }
+
+//   .moving-text a {
+//       /* position: absolute; */
+//       transform: translateX(100%);
+//       animation:  4s forwards normal  linear infinite ;
+
+//   }
+
+//   @keyframes scroll {
+//       100% {
+//           transform: translateX(100%);
+//       }
+//       0% {
+//           transform: translateX(-100%);
+//       }
+//   }
+@media only screen and (min-width: 768px) {
+  .copyrightNote {
+    font: 300 1.5rem black $foottext;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    background-color: $first;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .copyrightNote {
+    width: 100%;
+    text-align: center;
+    font: 700 1rem black;
+    padding: 10px;
+    background-color: $first;
+  }
+}
